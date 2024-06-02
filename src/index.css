@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/***** nav-bar *****/
+.nav-bar {
+  margin:auto;
+  background: #5B7560;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+}
+
+.toggle-button {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font-size: 1.2vw;
+}
+
+.sign-up-btn {
+  margin-right: 30px;
+  border: 3px solid rgb(232, 232, 131);
+  border-radius: 8px;
+  background-color: #5B7560;
+  padding: 8px 16px;
+  color: rgb(232, 232, 131);
+  font-size: 1.2vw;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(232, 232, 131);
+}
+
+.nav-links li {
+  padding: 9px 32px;
+}
+
+.logo-name {
+  color: rgb(232, 232, 131);
+  margin-left: 35px;
+  font-size:4vw;
+}
+@media (max-width:768px) {
+  .toggle-button{
+    display: inline;
+    padding: 9px 24px;
+    background-color:rgb(232, 232, 131);
+    border: none;
+    border-radius: 7px;
+    color:#5B7560;
+    margin-right: 35px;
+  }
+  .nav-links{
+    display: none;
+  }
+  .nav-links.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sign-up-btn{
+    padding: 3px 8px;
+    font-size: 2vw;
+  }
+}
+@media (max-width:375px) {
+  .sign-up-btn{
+    font-size: 2vw;
+  }
+  
+}
+
+/********Home******/
+.home{
+   background-color: #DBB776;
+}
+
+/******** section 1 *********/
+
+.section1 {
+  background-image: url(../public/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  width: 100%;
+  padding:16px 0;
+}
+
+.welcome-text{
+  max-width:45%;
+  margin-left:35px;
+  font-size: 2vw;
+}
+
+.section1 button {
+  margin-left: 35px;
+  background-color: #86bf53;
+  color: white;
+  border-radius: 7px;
+  padding: 9px 16px;
+  border:none;
+}
+
+/***animations****/
+
+@keyframes typing {
+  from{
+    width:0;
+  }
+  to{
+    width:100%;
+  }
+  
+}
+.welcome{
+  overflow: hidden;
+  animation: typing 49s steps(40, end);
+}
+
+/*Pomodoro Timer*/
+.pomodoro-timer{
+  background-color: #5B7560  ;
+}
+.pomodoro{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  background-color:#DBB776;
+  align-items: center;
+}
+
+.clock{
+  display: flex;
+  flex-direction:row;
+}
+
+.clock-before-text , .clock-after-text{
+  display:flex;
+  flex-direction: column;
+}
+
+.clock-box{
+  padding:5px 15px;
+  font-size: 2vw;
+}
+.pomodoro-instruction{
+  text-align: center;
+}
+
+.clock-after-text p{
+  padding:5px 5px;
+  text-align: center;
+}
+.clockStartBtn{
+  padding: 9px 16px;
+  width:15%;
+  margin: 35px auto;
+}
+
+/*Footer*/
+
+footer{
+  width:100%;
+  margin:auto;
+  background-color: #353836;
+  color: rgb(149, 149, 149);
+  padding: 25px 0;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-second-line a{
+  text-decoration: none;
+  color:rgb(149, 149, 149) ;
+}
+.footer-first-line a{
+  color:rgb(207, 207, 207);
+}
